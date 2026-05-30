@@ -67,5 +67,71 @@ namespace Ejercicio2Paradigmas.vista
             this.Close();
 
         }
+
+        private void MasCaro_Click(object sender, EventArgs e)
+        {
+            if (L_P.Count == 0)
+            {
+                MessageBox.Show("No hay productos");
+                return;
+            }
+
+            var productoCaro = L_P.OrderByDescending(p => p.precio).First();
+
+            MessageBox.Show(
+                $"Producto: {productoCaro.nombre}\nPrecio: L. {productoCaro.precio}"
+            );
+        }
+
+        private void MasBarato_Click(object sender, EventArgs e)
+        {
+            if (L_P.Count == 0)
+            {
+                MessageBox.Show("No hay productos");
+                return;
+            }
+
+            var productoBarato = L_P.OrderBy(p => p.precio).First();
+
+            MessageBox.Show(
+                $"Producto: {productoBarato.nombre}\nPrecio: L. {productoBarato.precio}"
+            );
+        }
+
+        private void Promedio_Click(object sender, EventArgs e)
+        {
+            if (L_P.Count == 0)
+            {
+                MessageBox.Show("No hay productos");
+                return;
+            }
+
+            double promedio = L_P.Average(p => p.precio);
+
+            MessageBox.Show(
+                $"El promedio de los precios es: {promedio:F2}"
+            );
+        }
+
+        private void Buscar_Click(object sender, EventArgs e)
+        {
+            var resultado = L_P
+        .Where(p => p.nombre.ToLower()
+        .Contains(textBoxBuscar.Text.ToLower()))
+        .ToList();
+
+            dataGridView1.DataSource = null;
+            dataGridView1.DataSource = resultado;
+        }
+
+        private void Ordenar_Click(object sender, EventArgs e)
+        {
+            var ordenados = L_P
+       .OrderBy(p => p.precio)
+       .ToList();
+
+            dataGridView1.DataSource = null;
+            dataGridView1.DataSource = ordenados;
+        }
     }
 }
