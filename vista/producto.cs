@@ -109,7 +109,7 @@ namespace Ejercicio2Paradigmas.vista
             double promedio = L_P.Average(p => p.precio);
 
             MessageBox.Show(
-                $"El promedio de los precios es: {promedio:F2}"
+                $"El promedio de los precios es: L. {promedio:F2}"
             );
         }
 

@@ -133,22 +133,27 @@
             // 
             // button1
             // 
+            button1.BackColor = Color.LightPink;
+            button1.FlatStyle = FlatStyle.Flat;
+            button1.ForeColor = SystemColors.ActiveCaptionText;
             button1.Location = new Point(56, 406);
             button1.Name = "button1";
             button1.Size = new Size(221, 29);
             button1.TabIndex = 9;
             button1.Text = "Agregar";
-            button1.UseVisualStyleBackColor = true;
+            button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
             // 
             // buttonMostrar
             // 
+            buttonMostrar.BackColor = Color.LightPink;
+            buttonMostrar.FlatStyle = FlatStyle.Flat;
             buttonMostrar.Location = new Point(328, 406);
             buttonMostrar.Name = "buttonMostrar";
             buttonMostrar.Size = new Size(221, 29);
             buttonMostrar.TabIndex = 10;
             buttonMostrar.Text = "Mostrar";
-            buttonMostrar.UseVisualStyleBackColor = true;
+            buttonMostrar.UseVisualStyleBackColor = false;
             buttonMostrar.Click += buttonMostrar_Click;
             // 
             // buttonCerrar
@@ -172,32 +177,38 @@
             // 
             // MasCaro
             // 
+            MasCaro.BackColor = Color.LightPink;
+            MasCaro.FlatStyle = FlatStyle.Flat;
             MasCaro.Location = new Point(837, 501);
             MasCaro.Name = "MasCaro";
             MasCaro.Size = new Size(163, 29);
             MasCaro.TabIndex = 13;
             MasCaro.Text = "Producto mas caro";
-            MasCaro.UseVisualStyleBackColor = true;
+            MasCaro.UseVisualStyleBackColor = false;
             MasCaro.Click += MasCaro_Click;
             // 
             // MasBarato
             // 
+            MasBarato.BackColor = Color.LightPink;
+            MasBarato.FlatStyle = FlatStyle.Flat;
             MasBarato.Location = new Point(1043, 501);
             MasBarato.Name = "MasBarato";
             MasBarato.Size = new Size(163, 29);
             MasBarato.TabIndex = 14;
             MasBarato.Text = "Producto mas barato";
-            MasBarato.UseVisualStyleBackColor = true;
+            MasBarato.UseVisualStyleBackColor = false;
             MasBarato.Click += MasBarato_Click;
             // 
             // Promedio
             // 
+            Promedio.BackColor = Color.LightPink;
+            Promedio.FlatStyle = FlatStyle.Flat;
             Promedio.Location = new Point(620, 501);
             Promedio.Name = "Promedio";
             Promedio.Size = new Size(163, 29);
             Promedio.TabIndex = 15;
             Promedio.Text = "Calcular Promedio";
-            Promedio.UseVisualStyleBackColor = true;
+            Promedio.UseVisualStyleBackColor = false;
             Promedio.Click += Promedio_Click;
             // 
             // textBoxBuscar
@@ -210,6 +221,7 @@
             // Buscar
             // 
             Buscar.BackColor = SystemColors.ActiveCaptionText;
+            Buscar.FlatStyle = FlatStyle.Flat;
             Buscar.ForeColor = SystemColors.ButtonHighlight;
             Buscar.Location = new Point(889, 67);
             Buscar.Name = "Buscar";
