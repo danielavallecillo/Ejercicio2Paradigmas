@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Ejercicio2Paradigmas.saulo
+namespace Ejercicio2Paradigmas.vista
 {
     public partial class producto : Form
     {

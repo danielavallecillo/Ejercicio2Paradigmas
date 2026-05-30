@@ -1,4 +1,4 @@
-﻿namespace Ejercicio2Paradigmas.saulo
+﻿namespace Ejercicio2Paradigmas.vista
 {
     partial class producto
     {

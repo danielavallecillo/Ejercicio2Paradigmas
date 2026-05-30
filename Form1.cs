@@ -9,7 +9,7 @@ namespace Ejercicio2Paradigmas
 
         private void agregarToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            saulo.producto forma = new saulo.producto();
+            vista.producto forma = new vista.producto();
             forma.MdiParent = this;
             forma.Show();
 
