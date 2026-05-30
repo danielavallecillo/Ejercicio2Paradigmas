@@ -37,8 +37,13 @@
             textBox2 = new TextBox();
             numericUpDown1 = new NumericUpDown();
             numericUpDown2 = new NumericUpDown();
+            button1 = new Button();
+            buttonMostrar = new Button();
+            buttonCerrar = new Button();
+            dataGridView1 = new DataGridView();
             ((System.ComponentModel.ISupportInitialize)numericUpDown1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)numericUpDown2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
             // label1
@@ -120,11 +125,54 @@
             numericUpDown2.TabIndex = 8;
             numericUpDown2.TextAlign = HorizontalAlignment.Right;
             // 
+            // button1
+            // 
+            button1.Location = new Point(56, 448);
+            button1.Name = "button1";
+            button1.Size = new Size(150, 29);
+            button1.TabIndex = 9;
+            button1.Text = "Agregar";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
+            // buttonMostrar
+            // 
+            buttonMostrar.Location = new Point(284, 448);
+            buttonMostrar.Name = "buttonMostrar";
+            buttonMostrar.Size = new Size(150, 29);
+            buttonMostrar.TabIndex = 10;
+            buttonMostrar.Text = "Mostrar";
+            buttonMostrar.UseVisualStyleBackColor = true;
+            buttonMostrar.Click += buttonMostrar_Click;
+            // 
+            // buttonCerrar
+            // 
+            buttonCerrar.Location = new Point(1127, 448);
+            buttonCerrar.Name = "buttonCerrar";
+            buttonCerrar.Size = new Size(150, 29);
+            buttonCerrar.TabIndex = 11;
+            buttonCerrar.Text = "Cerrar";
+            buttonCerrar.UseVisualStyleBackColor = true;
+            buttonCerrar.Click += buttonCerrar_Click;
+            // 
+            // dataGridView1
+            // 
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Location = new Point(622, 34);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.RowHeadersWidth = 51;
+            dataGridView1.Size = new Size(655, 382);
+            dataGridView1.TabIndex = 12;
+            // 
             // producto
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(1309, 489);
+            Controls.Add(dataGridView1);
+            Controls.Add(buttonCerrar);
+            Controls.Add(buttonMostrar);
+            Controls.Add(button1);
             Controls.Add(numericUpDown2);
             Controls.Add(numericUpDown1);
             Controls.Add(textBox2);
@@ -140,6 +188,7 @@
             Load += producto_Load;
             ((System.ComponentModel.ISupportInitialize)numericUpDown1).EndInit();
             ((System.ComponentModel.ISupportInitialize)numericUpDown2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -155,5 +204,9 @@
         private TextBox textBox2;
         private NumericUpDown numericUpDown1;
         private NumericUpDown numericUpDown2;
+        private Button button1;
+        private Button buttonMostrar;
+        private Button buttonCerrar;
+        private DataGridView dataGridView1;
     }
 }
